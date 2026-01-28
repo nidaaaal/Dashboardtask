@@ -9,7 +9,7 @@ export default function Index() {
       <Sidebar />
 
       {/* Main Content */}
-      <div className="flex-1 flex flex-col lg:ml-64">
+      <div className="flex-1 flex flex-col ml-64">
         <Header />
         <RisksTable />
       </div>
