@@ -59,7 +59,7 @@ export function Header() {
       </div>
 
       {/* Stats Cards */}
-      <div className="bg-card px-4 md:px-8 py-6 border-b border-border grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+      <div className="bg-card px-8 py-6 border-b border-border grid grid-cols-3 gap-6">
         {stats.map((stat) => (
           <div key={stat.label} className="flex items-center gap-3">
             <div className={`${stat.color} p-2 rounded-lg bg-muted`}>
