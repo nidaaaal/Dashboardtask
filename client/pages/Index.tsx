@@ -1,6 +1,6 @@
-import { Sidebar } from '@/components/Sidebar';
-import { Header } from '@/components/Header';
-import { RisksTable } from '@/components/RisksTable';
+import { Sidebar } from "@/components/Sidebar";
+import { Header } from "@/components/Header";
+import { RisksTable } from "@/components/RisksTable";
 
 export default function Index() {
   return (

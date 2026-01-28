@@ -1,17 +1,26 @@
-import { LayoutGrid, ListChecks, Settings, BarChart3, Bell, BookOpen, ShieldAlert, LogOut } from 'lucide-react';
-import { cn } from '@/lib/utils';
+import {
+  LayoutGrid,
+  ListChecks,
+  Settings,
+  BarChart3,
+  Bell,
+  BookOpen,
+  ShieldAlert,
+  LogOut,
+} from "lucide-react";
+import { cn } from "@/lib/utils";
 
 const navItems = [
-  { icon: LayoutGrid, label: 'Dashboard', href: '/' },
-  { icon: ShieldAlert, label: 'Risks', href: '/', active: true },
-  { icon: ListChecks, label: 'Mitigations', href: '/' },
-  { icon: BarChart3, label: 'Reports', href: '/' },
-  { icon: BookOpen, label: 'Documentation', href: '/' },
+  { icon: LayoutGrid, label: "Dashboard", href: "/" },
+  { icon: ShieldAlert, label: "Risks", href: "/", active: true },
+  { icon: ListChecks, label: "Mitigations", href: "/" },
+  { icon: BarChart3, label: "Reports", href: "/" },
+  { icon: BookOpen, label: "Documentation", href: "/" },
 ];
 
 const bottomItems = [
-  { icon: Bell, label: 'Notifications', href: '/' },
-  { icon: Settings, label: 'Settings', href: '/' },
+  { icon: Bell, label: "Notifications", href: "/" },
+  { icon: Settings, label: "Settings", href: "/" },
 ];
 
 export function Sidebar() {
@@ -35,10 +44,10 @@ export function Sidebar() {
               key={item.label}
               href={item.href}
               className={cn(
-                'flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-medium transition-colors',
+                "flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-medium transition-colors",
                 isActive
-                  ? 'bg-sidebar-primary text-sidebar-primary-foreground'
-                  : 'text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground'
+                  ? "bg-sidebar-primary text-sidebar-primary-foreground"
+                  : "text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground",
               )}
             >
               <Icon className="h-5 w-5" />
