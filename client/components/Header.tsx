@@ -32,11 +32,11 @@ export function Header() {
   return (
     <div className="flex-1 flex flex-col">
       {/* Header Top Bar */}
-      <div className="bg-card border-b border-border px-8 py-4 flex items-center justify-between">
+      <div className="bg-card border-b border-border px-4 md:px-8 py-4 flex items-center justify-between">
         <div>
-          <h2 className="text-2xl font-bold text-foreground">Enterprise Risk Management</h2>
+          <h2 className="text-lg md:text-2xl font-bold text-foreground">Enterprise Risk Management</h2>
         </div>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2 md:gap-4">
           <button className="p-2 hover:bg-muted rounded-lg transition-colors">
             <svg className="h-5 w-5 text-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5A2.25 2.25 0 008.25 22.5h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0a.75.75 0 00-.75.75v.75h3v-.75a.75.75 0 00-.75-.75m0 0H9.75" />
