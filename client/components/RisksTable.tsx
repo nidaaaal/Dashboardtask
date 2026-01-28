@@ -268,23 +268,23 @@ export function RisksTable() {
           <tbody>
             {currentData.map((risk) => (
               <tr key={risk.id} className="border-b border-border/50 hover:bg-muted/20 transition-colors">
-                <td className="px-4 md:px-8 py-3 text-xs md:text-sm text-foreground font-mono whitespace-nowrap">{risk.id}</td>
-                <td className="px-4 py-3 text-xs md:text-sm text-foreground max-w-xs md:max-w-md">{risk.description}</td>
-                <td className="px-4 py-3 text-xs md:text-sm">
+                <td className="px-8 py-3 text-sm text-foreground font-mono whitespace-nowrap">{risk.id}</td>
+                <td className="px-4 py-3 text-sm text-foreground max-w-md">{risk.description}</td>
+                <td className="px-4 py-3 text-sm">
                   <span className={`px-2.5 py-1 rounded-full text-xs font-medium ${getStatusBadgeColor(risk.status)}`}>
                     {risk.status}
                   </span>
                 </td>
-                <td className="px-4 py-3 text-xs md:text-sm">
+                <td className="px-4 py-3 text-sm">
                   <span className={`px-2.5 py-1 rounded-full text-xs font-medium flex items-center gap-2 w-fit ${getTypeBadgeColor(risk.type)}`}>
                     <span className="inline-block w-2 h-2 rounded-full bg-current"></span>
                     {risk.type}
                   </span>
                 </td>
-                <td className="px-4 py-3 text-xs md:text-sm text-foreground whitespace-nowrap">{risk.phase}</td>
-                <td className="px-4 py-3 text-xs md:text-sm text-foreground">{risk.department}</td>
-                <td className="px-4 py-3 text-xs md:text-sm text-center text-foreground font-medium whitespace-nowrap">{risk.inherentImpact}</td>
-                <td className="px-4 py-3 text-xs md:text-sm text-center text-foreground font-medium whitespace-nowrap">{risk.inherentWealth}</td>
+                <td className="px-4 py-3 text-sm text-foreground whitespace-nowrap">{risk.phase}</td>
+                <td className="px-4 py-3 text-sm text-foreground">{risk.department}</td>
+                <td className="px-4 py-3 text-sm text-center text-foreground font-medium whitespace-nowrap">{risk.inherentImpact}</td>
+                <td className="px-4 py-3 text-sm text-center text-foreground font-medium whitespace-nowrap">{risk.inherentWealth}</td>
               </tr>
             ))}
           </tbody>
