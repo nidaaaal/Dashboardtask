@@ -205,7 +205,7 @@ export function RisksTable() {
   return (
     <div className="flex-1 flex flex-col overflow-hidden">
       {/* Toolbar */}
-      <div className="bg-card border-b border-border px-8 py-4 flex items-center justify-between">
+      <div className="bg-card border-b border-border px-4 md:px-8 py-4 flex flex-col md:flex-row items-start md:items-center gap-3 md:gap-4 md:justify-between">
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-2 bg-muted/50 rounded-lg px-3 py-2">
             <svg className="h-4 w-4 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
