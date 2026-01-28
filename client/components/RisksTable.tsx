@@ -292,11 +292,11 @@ export function RisksTable() {
       </div>
 
       {/* Pagination */}
-      <div className="bg-card border-t border-border px-8 py-4 flex items-center justify-between">
-        <div className="text-sm text-muted-foreground">
+      <div className="bg-card border-t border-border px-4 md:px-8 py-4 flex flex-col md:flex-row items-start md:items-center gap-3 md:gap-0 md:justify-between">
+        <div className="text-xs md:text-sm text-muted-foreground">
           Showing {startIndex + 1} to {endIndex} of {totalItems} items
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-1 md:gap-2">
           <button
             onClick={() => setCurrentPage(Math.max(1, currentPage - 1))}
             disabled={currentPage === 1}
