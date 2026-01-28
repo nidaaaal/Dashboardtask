@@ -207,14 +207,14 @@ export function RisksTable() {
       {/* Toolbar */}
       <div className="bg-card border-b border-border px-8 py-4 flex items-center justify-between gap-4">
         <div className="flex items-center gap-4">
-          <div className="flex items-center gap-2 bg-muted/50 rounded-lg px-3 py-2 w-full md:w-auto">
+          <div className="flex items-center gap-2 bg-muted/50 rounded-lg px-3 py-2">
             <svg className="h-4 w-4 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
             <input
               type="text"
               placeholder="Find..."
-              className="bg-transparent text-sm text-foreground placeholder-muted-foreground outline-none flex-1 md:w-40"
+              className="bg-transparent text-sm text-foreground placeholder-muted-foreground outline-none w-40"
             />
           </div>
           <button className="flex items-center gap-2 text-sm text-foreground hover:bg-muted px-3 py-2 rounded-lg transition-colors whitespace-nowrap">
