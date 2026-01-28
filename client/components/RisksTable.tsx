@@ -255,7 +255,7 @@ export function RisksTable() {
         <table className="w-full border-collapse min-w-max">
           <thead className="bg-muted/30 border-b border-border sticky top-0">
             <tr>
-              <th className="px-4 md:px-8 py-3 text-left text-xs font-semibold text-muted-foreground whitespace-nowrap">Record ID</th>
+              <th className="px-8 py-3 text-left text-xs font-semibold text-muted-foreground whitespace-nowrap">Record ID</th>
               <th className="px-4 py-3 text-left text-xs font-semibold text-muted-foreground whitespace-nowrap">Risk Activity Description</th>
               <th className="px-4 py-3 text-left text-xs font-semibold text-muted-foreground whitespace-nowrap">Status</th>
               <th className="px-4 py-3 text-left text-xs font-semibold text-muted-foreground whitespace-nowrap">Type</th>
