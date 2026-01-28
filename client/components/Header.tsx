@@ -12,19 +12,19 @@ export function Header() {
     {
       label: "Open Risks",
       value: 213,
-      icon: <AlertCircle className="h-5 w-5" />,
+      icon: <AlertCircle className="h-6 w-6" />,
       color: "text-orange-500",
     },
     {
       label: "High Priority High Priority",
       value: 23,
-      icon: <TrendingUp className="h-5 w-5" />,
+      icon: <TrendingUp className="h-6 w-6" />,
       color: "text-blue-500",
     },
     {
       label: "Threats",
       value: 121,
-      icon: <ShieldAlert className="h-5 w-5" />,
+      icon: <ShieldAlert className="h-6 w-6" />,
       color: "text-yellow-500",
     },
   ];
@@ -32,16 +32,16 @@ export function Header() {
   return (
     <div className="flex-1 flex flex-col">
       {/* Header Top Bar */}
-      <div className="bg-card border-b border-border px-8 py-4 flex items-center justify-between">
+      <div className="bg-white border-b border-gray-200 px-8 py-4 flex items-center justify-between">
         <div>
-          <h2 className="text-2xl font-bold text-foreground">
+          <h2 className="text-2xl font-bold text-gray-900">
             Enterprise Risk Management
           </h2>
         </div>
         <div className="flex items-center gap-4">
-          <button className="p-2 hover:bg-muted rounded-lg transition-colors">
+          <button className="p-2 hover:bg-gray-100 rounded-lg transition-colors">
             <svg
-              className="h-5 w-5 text-foreground"
+              className="h-5 w-5 text-gray-700"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -54,9 +54,9 @@ export function Header() {
               />
             </svg>
           </button>
-          <button className="p-2 hover:bg-muted rounded-lg transition-colors">
+          <button className="p-2 hover:bg-gray-100 rounded-lg transition-colors">
             <svg
-              className="h-5 w-5 text-foreground"
+              className="h-5 w-5 text-gray-700"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -69,9 +69,9 @@ export function Header() {
               />
             </svg>
           </button>
-          <button className="p-2 hover:bg-muted rounded-lg transition-colors">
+          <button className="p-2 hover:bg-gray-100 rounded-lg transition-colors">
             <svg
-              className="h-5 w-5 text-foreground"
+              className="h-5 w-5 text-gray-700"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -84,24 +84,22 @@ export function Header() {
               />
             </svg>
           </button>
-          <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center">
-            <span className="text-sm font-semibold text-primary">U</span>
+          <div className="w-8 h-8 rounded-full bg-orange-100 flex items-center justify-center">
+            <span className="text-sm font-semibold text-orange-600">U</span>
           </div>
         </div>
       </div>
 
       {/* Stats Cards */}
-      <div className="bg-card px-8 py-6 border-b border-border grid grid-cols-3 gap-6">
+      <div className="bg-white px-8 py-6 border-b border-gray-200 grid grid-cols-3 gap-6">
         {stats.map((stat) => (
-          <div key={stat.label} className="flex items-center gap-3">
-            <div className={`${stat.color} p-2 rounded-lg bg-muted`}>
+          <div key={stat.label} className="flex items-center gap-4">
+            <div className={`${stat.color} p-3 rounded-lg bg-orange-50`}>
               {stat.icon}
             </div>
             <div>
-              <div className="text-3xl font-bold text-foreground">
-                {stat.value}
-              </div>
-              <div className="text-sm text-muted-foreground">{stat.label}</div>
+              <p className="text-sm text-gray-600">{stat.label}</p>
+              <p className="text-3xl font-bold text-gray-900">{stat.value}</p>
             </div>
           </div>
         ))}

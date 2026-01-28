@@ -25,12 +25,12 @@ const bottomItems = [
 
 export function Sidebar() {
   return (
-    <aside className="w-64 bg-sidebar border-r border-sidebar-border flex flex-col h-screen fixed left-0 top-0 z-50">
+    <aside className="w-64 bg-white border-r border-gray-200 flex flex-col h-screen fixed left-0 top-0 z-50">
       {/* Logo */}
-      <div className="px-6 py-6 border-b border-sidebar-border">
+      <div className="px-6 py-6 border-b border-gray-200">
         <div className="flex items-center gap-2">
-          <ShieldAlert className="h-6 w-6 text-primary" />
-          <h1 className="text-lg font-bold text-sidebar-foreground">ERM</h1>
+          <ShieldAlert className="h-6 w-6 text-orange-500" />
+          <h1 className="text-lg font-bold text-gray-900">ERM</h1>
         </div>
       </div>
 
@@ -46,8 +46,8 @@ export function Sidebar() {
               className={cn(
                 "flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-medium transition-colors",
                 isActive
-                  ? "bg-sidebar-primary text-sidebar-primary-foreground"
-                  : "text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground",
+                  ? "bg-orange-500 text-white"
+                  : "text-gray-700 hover:bg-gray-100",
               )}
             >
               <Icon className="h-5 w-5" />
@@ -58,14 +58,14 @@ export function Sidebar() {
       </nav>
 
       {/* Bottom Items */}
-      <div className="px-3 py-4 border-t border-sidebar-border space-y-2">
+      <div className="px-3 py-4 border-t border-gray-200 space-y-2">
         {bottomItems.map((item) => {
           const Icon = item.icon;
           return (
             <a
               key={item.label}
               href={item.href}
-              className="flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-medium text-sidebar-foreground hover:bg-sidebar-accent transition-colors"
+              className="flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors"
             >
               <Icon className="h-5 w-5" />
               {item.label}
@@ -75,8 +75,8 @@ export function Sidebar() {
       </div>
 
       {/* User Profile */}
-      <div className="px-3 py-4 border-t border-sidebar-border">
-        <button className="w-full flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-medium text-sidebar-foreground hover:bg-sidebar-accent transition-colors">
+      <div className="px-3 py-4 border-t border-gray-200">
+        <button className="w-full flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors">
           <LogOut className="h-5 w-5" />
           Logout
         </button>

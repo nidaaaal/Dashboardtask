@@ -211,11 +211,11 @@ export function RisksTable() {
   return (
     <div className="flex-1 flex flex-col overflow-hidden">
       {/* Toolbar */}
-      <div className="bg-card border-b border-border px-8 py-4 flex items-center justify-between gap-4">
+      <div className="bg-white border-b border-gray-200 px-8 py-4 flex items-center justify-between gap-4">
         <div className="flex items-center gap-4">
-          <div className="flex items-center gap-2 bg-muted/50 rounded-lg px-3 py-2">
+          <div className="flex items-center gap-2 bg-gray-50 rounded-lg px-3 py-2">
             <svg
-              className="h-4 w-4 text-muted-foreground"
+              className="h-4 w-4 text-gray-400"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -230,10 +230,10 @@ export function RisksTable() {
             <input
               type="text"
               placeholder="Find..."
-              className="bg-transparent text-sm text-foreground placeholder-muted-foreground outline-none w-40"
+              className="bg-transparent text-sm text-gray-900 placeholder-gray-500 outline-none w-40"
             />
           </div>
-          <button className="flex items-center gap-2 text-sm text-foreground hover:bg-muted px-3 py-2 rounded-lg transition-colors whitespace-nowrap">
+          <button className="flex items-center gap-2 text-sm text-gray-700 hover:bg-gray-100 px-3 py-2 rounded-lg transition-colors whitespace-nowrap">
             <svg
               className="h-4 w-4"
               fill="none"
@@ -250,67 +250,67 @@ export function RisksTable() {
             Filters
           </button>
         </div>
-        <button className="bg-primary text-primary-foreground px-3 md:px-4 py-2 rounded-lg text-xs md:text-sm font-medium hover:bg-primary/90 transition-colors flex items-center gap-1 md:gap-2 whitespace-nowrap">
+        <button className="bg-orange-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-orange-600 transition-colors flex items-center gap-2 whitespace-nowrap">
           <span>+</span>
           <span className="hidden sm:inline">Create</span>
         </button>
       </div>
 
       {/* Tabs and filters */}
-      <div className="bg-card border-b border-border px-8 py-4 flex items-center gap-6 overflow-x-auto">
+      <div className="bg-white border-b border-gray-200 px-8 py-4 flex items-center gap-6 overflow-x-auto">
         <div className="flex items-center gap-2">
-          <button className="text-sm font-medium text-primary border-b-2 border-primary pb-2">
+          <button className="text-sm font-medium text-orange-500 border-b-2 border-orange-500 pb-2">
             All
           </button>
-          <span className="text-xs text-muted-foreground">213</span>
+          <span className="text-xs text-gray-600">213</span>
         </div>
         <div className="flex items-center gap-2">
-          <button className="text-sm font-medium text-muted-foreground hover:text-foreground">
+          <button className="text-sm font-medium text-gray-600 hover:text-gray-900">
             New
           </button>
-          <span className="text-xs text-muted-foreground">8</span>
+          <span className="text-xs text-gray-600">8</span>
         </div>
         <div className="flex items-center gap-2">
-          <button className="text-sm font-medium text-muted-foreground hover:text-foreground">
+          <button className="text-sm font-medium text-gray-600 hover:text-gray-900">
             Under Mitigation
           </button>
-          <span className="text-xs text-muted-foreground">12</span>
+          <span className="text-xs text-gray-600">12</span>
         </div>
         <div className="flex items-center gap-2">
-          <button className="text-sm font-medium text-muted-foreground hover:text-foreground">
+          <button className="text-sm font-medium text-gray-600 hover:text-gray-900">
             Closed
           </button>
-          <span className="text-xs text-muted-foreground">2</span>
+          <span className="text-xs text-gray-600">2</span>
         </div>
       </div>
 
       {/* Table */}
       <div className="flex-1 overflow-x-auto">
         <table className="w-full border-collapse min-w-max">
-          <thead className="bg-muted/30 border-b border-border sticky top-0">
+          <thead className="bg-gray-50 border-b border-gray-200 sticky top-0">
             <tr>
-              <th className="px-8 py-3 text-left text-xs font-semibold text-muted-foreground whitespace-nowrap">
+              <th className="px-8 py-3 text-left text-xs font-semibold text-gray-700 whitespace-nowrap">
                 Record ID
               </th>
-              <th className="px-4 py-3 text-left text-xs font-semibold text-muted-foreground whitespace-nowrap">
+              <th className="px-4 py-3 text-left text-xs font-semibold text-gray-700 whitespace-nowrap">
                 Risk Activity Description
               </th>
-              <th className="px-4 py-3 text-left text-xs font-semibold text-muted-foreground whitespace-nowrap">
+              <th className="px-4 py-3 text-left text-xs font-semibold text-gray-700 whitespace-nowrap">
                 Status
               </th>
-              <th className="px-4 py-3 text-left text-xs font-semibold text-muted-foreground whitespace-nowrap">
+              <th className="px-4 py-3 text-left text-xs font-semibold text-gray-700 whitespace-nowrap">
                 Type
               </th>
-              <th className="px-4 py-3 text-left text-xs font-semibold text-muted-foreground whitespace-nowrap">
+              <th className="px-4 py-3 text-left text-xs font-semibold text-gray-700 whitespace-nowrap">
                 Phase
               </th>
-              <th className="px-4 py-3 text-left text-xs font-semibold text-muted-foreground whitespace-nowrap">
+              <th className="px-4 py-3 text-left text-xs font-semibold text-gray-700 whitespace-nowrap">
                 Department
               </th>
-              <th className="px-4 py-3 text-center text-xs font-semibold text-muted-foreground whitespace-nowrap">
+              <th className="px-4 py-3 text-center text-xs font-semibold text-gray-700 whitespace-nowrap">
                 Inherent Impact
               </th>
-              <th className="px-4 py-3 text-center text-xs font-semibold text-muted-foreground whitespace-nowrap">
+              <th className="px-4 py-3 text-center text-xs font-semibold text-gray-700 whitespace-nowrap">
                 Inherent Wealth
               </th>
             </tr>
@@ -319,12 +319,12 @@ export function RisksTable() {
             {currentData.map((risk) => (
               <tr
                 key={risk.id}
-                className="border-b border-border/50 hover:bg-muted/20 transition-colors"
+                className="border-b border-gray-100 hover:bg-gray-50 transition-colors"
               >
-                <td className="px-8 py-3 text-sm text-foreground font-mono whitespace-nowrap">
+                <td className="px-8 py-3 text-sm text-gray-900 font-mono whitespace-nowrap">
                   {risk.id}
                 </td>
-                <td className="px-4 py-3 text-sm text-foreground max-w-md">
+                <td className="px-4 py-3 text-sm text-gray-700 max-w-md">
                   {risk.description}
                 </td>
                 <td className="px-4 py-3 text-sm">
@@ -342,16 +342,16 @@ export function RisksTable() {
                     {risk.type}
                   </span>
                 </td>
-                <td className="px-4 py-3 text-sm text-foreground whitespace-nowrap">
+                <td className="px-4 py-3 text-sm text-gray-700 whitespace-nowrap">
                   {risk.phase}
                 </td>
-                <td className="px-4 py-3 text-sm text-foreground">
+                <td className="px-4 py-3 text-sm text-gray-700">
                   {risk.department}
                 </td>
-                <td className="px-4 py-3 text-sm text-center text-foreground font-medium whitespace-nowrap">
+                <td className="px-4 py-3 text-sm text-center text-gray-900 font-medium whitespace-nowrap">
                   {risk.inherentImpact}
                 </td>
-                <td className="px-4 py-3 text-sm text-center text-foreground font-medium whitespace-nowrap">
+                <td className="px-4 py-3 text-sm text-center text-gray-900 font-medium whitespace-nowrap">
                   {risk.inherentWealth}
                 </td>
               </tr>
@@ -361,17 +361,17 @@ export function RisksTable() {
       </div>
 
       {/* Pagination */}
-      <div className="bg-card border-t border-border px-8 py-4 flex items-center justify-between">
-        <div className="text-sm text-muted-foreground">
+      <div className="bg-white border-t border-gray-200 px-8 py-4 flex items-center justify-between">
+        <div className="text-sm text-gray-600">
           Showing {startIndex + 1} to {endIndex} of {totalItems} items
         </div>
         <div className="flex items-center gap-2">
           <button
             onClick={() => setCurrentPage(Math.max(1, currentPage - 1))}
             disabled={currentPage === 1}
-            className="p-2 hover:bg-muted rounded transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            className="p-2 hover:bg-gray-100 rounded transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            <ChevronLeft className="h-4 w-4 text-muted-foreground" />
+            <ChevronLeft className="h-4 w-4 text-gray-600" />
           </button>
           {Array.from({ length: Math.min(5, totalPages) }).map((_, i) => {
             const pageNum = i + 1;
@@ -381,8 +381,8 @@ export function RisksTable() {
                 onClick={() => setCurrentPage(pageNum)}
                 className={`px-3 py-1 rounded text-sm font-medium transition-colors ${
                   pageNum === currentPage
-                    ? "bg-primary text-primary-foreground"
-                    : "text-muted-foreground hover:bg-muted"
+                    ? "bg-orange-500 text-white"
+                    : "text-gray-600 hover:bg-gray-100"
                 }`}
               >
                 {pageNum}
@@ -391,13 +391,13 @@ export function RisksTable() {
           })}
           {totalPages > 5 && (
             <>
-              <span className="text-muted-foreground">...</span>
+              <span className="text-gray-600">...</span>
               <button
                 onClick={() => setCurrentPage(totalPages)}
                 className={`px-3 py-1 rounded text-sm font-medium transition-colors ${
                   totalPages === currentPage
-                    ? "bg-primary text-primary-foreground"
-                    : "text-muted-foreground hover:bg-muted"
+                    ? "bg-orange-500 text-white"
+                    : "text-gray-600 hover:bg-gray-100"
                 }`}
               >
                 {totalPages}
@@ -409,9 +409,9 @@ export function RisksTable() {
               setCurrentPage(Math.min(totalPages, currentPage + 1))
             }
             disabled={currentPage === totalPages}
-            className="p-2 hover:bg-muted rounded transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            className="p-2 hover:bg-gray-100 rounded transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            <ChevronRight className="h-4 w-4 text-muted-foreground" />
+            <ChevronRight className="h-4 w-4 text-gray-600" />
           </button>
         </div>
       </div>
