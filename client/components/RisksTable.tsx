@@ -231,7 +231,7 @@ export function RisksTable() {
       </div>
 
       {/* Tabs and filters */}
-      <div className="bg-card border-b border-border px-8 py-4 flex items-center gap-6">
+      <div className="bg-card border-b border-border px-4 md:px-8 py-4 flex items-center gap-4 md:gap-6 overflow-x-auto">
         <div className="flex items-center gap-2">
           <button className="text-sm font-medium text-primary border-b-2 border-primary pb-2">All</button>
           <span className="text-xs text-muted-foreground">213</span>
